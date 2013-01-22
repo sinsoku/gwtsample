@@ -9,3 +9,9 @@ $ mvn archetype:generate \
   -DarchetypeArtifactId=gwt-maven-plugin \
   -DarchetypeVersion=2.5.0
 ```
+
+‹N“®•û–@
+---------
+```bash
+$ mvn gwt:run
+```
