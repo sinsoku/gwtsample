@@ -1,2 +1,0 @@
-serviceClass: sample.sinsoku.client.GreetingService
-path: BD311F35658BE833A8620AD562866AA1.gwt.rpc

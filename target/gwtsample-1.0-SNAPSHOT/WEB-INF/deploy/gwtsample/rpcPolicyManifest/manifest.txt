@@ -1,3 +1,0 @@
-# Module gwtsample
-# RPC service class, partial path of RPC policy file
-sample.sinsoku.client.GreetingService, BD311F35658BE833A8620AD562866AA1.gwt.rpc
