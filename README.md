@@ -15,3 +15,9 @@ $ mvn archetype:generate \
 ```bash
 $ mvn gwt:run
 ```
+
+Eclipseでプロジェクトをインポートする
+--------------------------------------
+```bash
+$ mvn gwt:eclipse
+```
