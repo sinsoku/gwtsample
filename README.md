@@ -19,5 +19,6 @@ $ mvn gwt:run
 Eclipseでプロジェクトをインポートする
 --------------------------------------
 ```bash
+$ mvn eclipse:eclipse
 $ mvn gwt:eclipse
 ```
