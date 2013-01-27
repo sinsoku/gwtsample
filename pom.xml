@@ -15,6 +15,8 @@
   <properties>
     <!-- Convenience property to set the GWT version -->
     <gwtVersion>2.5.0</gwtVersion>
+    <gae.version>1.7.4</gae.version>
+    <appEngineSdk>appengine-java-sdk-${gae.version}</appEngineSdk>
     <!-- GWT needs at least java 1.5 -->
     <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -81,6 +83,9 @@
           <runTarget>gwtsample.html</runTarget>
           <hostedWebapp>${webappDirectory}</hostedWebapp>
           <i18nMessagesBundle>sample.sinsoku.client.Messages</i18nMessagesBundle>
+          <!-- using gae launcher -->
+          <server>com.google.appengine.tools.development.gwt.AppEngineLauncher</server>
+          <appEngineHome>${appEngineSdk}</appEngineHome>
         </configuration>
       </plugin>
 
@@ -108,6 +113,23 @@
         <configuration>
           <source>1.5</source>
           <target>1.5</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>net.kindleit</groupId>
+        <artifactId>maven-gae-plugin</artifactId>
+        <version>0.9.5</version>
+        <dependencies>
+          <dependency>
+            <groupId>net.kindleit</groupId>
+            <artifactId>gae-runtime</artifactId>
+            <version>${gae.version}</version>
+            <type>pom</type>
+          </dependency>
+        </dependencies>
+        <configuration>
+          <unpackVersion>${gae.version}</unpackVersion>
+          <sdkDir>${appEngineSdk}</sdkDir>
         </configuration>
       </plugin>
     </plugins>
