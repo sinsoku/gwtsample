@@ -130,6 +130,7 @@
         <configuration>
           <unpackVersion>${gae.version}</unpackVersion>
           <sdkDir>${appEngineSdk}</sdkDir>
+          <serverId>appengine.google.com</serverId>
         </configuration>
       </plugin>
     </plugins>
