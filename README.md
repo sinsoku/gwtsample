@@ -1,6 +1,8 @@
 GWT Sample
 ===========
 
+[![Build Status](https://buildhive.cloudbees.com/job/sinsoku/job/gwtsample/badge/icon)](https://buildhive.cloudbees.com/job/sinsoku/job/gwtsample/)
+
 プロジェクトの作成方法
 -----------------------
 ```bash
