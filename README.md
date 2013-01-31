@@ -3,7 +3,7 @@ GWT Sample
 
 [![Build Status](https://buildhive.cloudbees.com/job/sinsoku/job/gwtsample/badge/icon)](https://buildhive.cloudbees.com/job/sinsoku/job/gwtsample/)
 
-ƒvƒƒWƒFƒNƒg‚Ìì¬•û–@
+ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã®ä½œæˆæ–¹æ³•
 -----------------------
 ```bash
 $ mvn archetype:generate \
@@ -12,25 +12,25 @@ $ mvn archetype:generate \
   -DarchetypeVersion=2.5.0
 ```
 
-‹N“®•û–@
+èµ·å‹•æ–¹æ³•
 ---------
 **Development Mode**
 ```bash
 $ mvn gwt:run
 ```
-ƒ‰ƒ“ƒ`ƒƒ[‹N“®ŒãA "Launch Default Browser" ‚©‚ç GWT Application ‚Ì“®ì‚ğŠm”F‚Å‚«‚éB
+ãƒ©ãƒ³ãƒãƒ£ãƒ¼èµ·å‹•å¾Œã€ "Launch Default Browser" ã‹ã‚‰ GWT Application ã®å‹•ä½œã‚’ç¢ºèªã§ãã‚‹ã€‚
 
 **Super Dev Mode**
 ```bash
 $ mvn compile run:codeserver
 ```
-super dev mode ‚Ìê‡A•Ê“r development mode ‚ğ‹N“®‚³‚¹‚é•K—v‚ª‚ ‚éB
-‹N“®ŒãA‚»‚ê‚¼‚ê‰º‹L‚ÌURL‚Å GWT Application ‚Ì“®ì‚ğŠm”F‚Å‚«‚éB
+super dev mode ã®å ´åˆã€åˆ¥é€” development mode ã‚’èµ·å‹•ã•ã›ã‚‹å¿…è¦ãŒã‚ã‚‹ã€‚
+èµ·å‹•å¾Œã€ãã‚Œãã‚Œä¸‹è¨˜ã®URLã§ GWT Application ã®å‹•ä½œã‚’ç¢ºèªã§ãã‚‹ã€‚
 
 * GWT App in development mode: http://127.0.0.1:8888/
 * code server: http://localhost:9876/
 
-Eclipse‚ÅƒvƒƒWƒFƒNƒg‚ğƒCƒ“ƒ|[ƒg‚·‚é
+Eclipseã§ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã‚’ã‚¤ãƒ³ãƒãƒ¼ãƒˆã™ã‚‹
 --------------------------------------
 ```bash
 $ mvn eclipse:eclipse
