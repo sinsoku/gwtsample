@@ -25,10 +25,11 @@ $ mvn gwt:run
 $ mvn compile run:codeserver
 ```
 super dev mode の場合、別途 development mode を起動させる必要がある。
+
 起動後、それぞれ下記のURLで GWT Application の動作を確認できる。
 
-* GWT App in development mode: http://127.0.0.1:8888/
-* code server: http://localhost:9876/
+* GWT App in development mode: <http://127.0.0.1:8888/>
+* code server: <http://localhost:9876/>
 
 Eclipseでプロジェクトをインポートする
 --------------------------------------
