@@ -14,9 +14,21 @@ $ mvn archetype:generate \
 
 起動方法
 ---------
+**Development Mode**
 ```bash
 $ mvn gwt:run
 ```
+ランチャー起動後、 "Launch Default Browser" から GWT Application の動作を確認できる。
+
+**Super Dev Mode**
+```bash
+$ mvn compile run:codeserver
+```
+super dev mode の場合、別途 development mode を起動させる必要がある。
+起動後、それぞれ下記のURLで GWT Application の動作を確認できる。
+
+* GWT App in development mode: http://127.0.0.1:8888/
+* code server: http://localhost:9876/
 
 Eclipseでプロジェクトをインポートする
 --------------------------------------
