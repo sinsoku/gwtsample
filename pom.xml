@@ -133,6 +133,19 @@
           <serverId>appengine.google.com</serverId>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.jasig.maven</groupId>
+        <artifactId>sass-maven-plugin</artifactId>
+        <version>1.0.2</version>
+        <executions>
+            <execution>
+                <phase>process-sources</phase>
+                <goals>
+                    <goal>update-stylesheets</goal>
+                </goals>
+            </execution>
+        </executions>
+      </plugin>
     </plugins>
     <pluginManagement>
     	<plugins>
