@@ -22,7 +22,7 @@ $ mvn gwt:run
 
 **Super Dev Mode**
 ```bash
-$ mvn compile run:codeserver
+$ mvn generate-sources run:codeserver
 ```
 super dev mode の場合、別途 development mode を起動させる必要がある。
 
