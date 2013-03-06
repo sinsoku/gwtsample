@@ -111,8 +111,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>2.3.2</version>
         <configuration>
-          <source>1.5</source>
-          <target>1.5</target>
+          <source>1.7</source>
+          <target>1.7</target>
         </configuration>
       </plugin>
       <plugin>
@@ -132,6 +132,19 @@
           <sdkDir>${appEngineSdk}</sdkDir>
           <serverId>appengine.google.com</serverId>
         </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.jasig.maven</groupId>
+        <artifactId>sass-maven-plugin</artifactId>
+        <version>1.0.2</version>
+        <executions>
+            <execution>
+                <phase>process-sources</phase>
+                <goals>
+                    <goal>update-stylesheets</goal>
+                </goals>
+            </execution>
+        </executions>
       </plugin>
     </plugins>
     <pluginManagement>
