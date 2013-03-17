@@ -23,7 +23,12 @@ public class CommandPanel extends VerticalPanel {
       public void onKeyPress(KeyPressEvent event) {
         int keyCode = event.getNativeEvent().getKeyCode();
         if (keyCode == KeyCodes.KEY_ENTER) {
-          consolePanel.appendText(inputTextBox.getText());
+          String inputText = inputTextBox.getText();
+          consolePanel.appendText("$ " + inputText);
+          
+          Command command = CommandFactory.parse(inputText);
+          String ret = command.execute();
+          consolePanel.appendText(ret);
           consolePanel.scrollToBottom();
           inputTextBox.setText("");
         }
