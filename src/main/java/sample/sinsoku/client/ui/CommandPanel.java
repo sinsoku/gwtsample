@@ -6,7 +6,7 @@ import com.google.gwt.user.client.ui.Label;
 public class CommandPanel extends FlowPanel {
 
   public CommandPanel() {
-    add(new Label("command"));
+    addStyleName("top-command");
   }
 
 }
