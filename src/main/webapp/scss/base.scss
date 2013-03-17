@@ -1,5 +1,7 @@
 @import "compass";
 
+$content-margin: 2px;
+
 .horizontal-panel {
 	@include display-box;
 	@include box-orient(horizontal);
@@ -11,10 +13,23 @@
 }
 
 .top-main-content {
-	margin: 5px;
+	margin: $content-margin;
 }
 
-.console-panel {
-	width: 200px;
-	height: 120px;
+.top-header {
+	margin: $content-margin;
+}
+
+.top-browse {
+	margin: $content-margin;
+}
+
+.top-command {
+	margin: $content-margin;
+
+    .console-panel {
+        margin: 1px;
+        width: 320px;
+        height: 240px;
+    }
 }
