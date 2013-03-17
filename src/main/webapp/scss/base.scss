@@ -22,6 +22,16 @@ $content-margin: 2px;
 
 .top-browse {
 	margin: $content-margin;
+	
+	.commit-graph {
+	   @include box-flex(1);
+	   height: 300px;
+	}
+	
+	.commit-browser {
+	   @include box-flex(1);
+	   height: 300px;
+	}
 }
 
 .top-command {
