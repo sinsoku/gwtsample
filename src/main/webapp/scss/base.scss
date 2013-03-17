@@ -1,5 +1,15 @@
 @import "compass";
 
-.sample {
-	@include clearfix;
+.horizontal-panel {
+	@include display-box;
+	@include box-orient(horizontal);
+}
+
+.vertical-panel {
+	@include display-box;
+	@include box-orient(vertical);
+}
+
+.top-main-content {
+	margin: 5px;
 }

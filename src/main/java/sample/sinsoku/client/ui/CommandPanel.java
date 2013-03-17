@@ -7,6 +7,8 @@ public class CommandPanel extends FlowPanel {
 
   public CommandPanel() {
     addStyleName("top-command");
+
+    add(new Label("command"));
   }
 
 }

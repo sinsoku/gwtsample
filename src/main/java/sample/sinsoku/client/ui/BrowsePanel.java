@@ -1,6 +1,6 @@
 package sample.sinsoku.client.ui;
 
-import com.google.gwt.user.client.ui.HorizontalPanel;
+import sample.sinsoku.client.base.HorizontalPanel;
 
 public class BrowsePanel extends HorizontalPanel {
 
