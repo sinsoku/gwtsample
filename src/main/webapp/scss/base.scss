@@ -1,5 +1,45 @@
 @import "compass";
 
-.sample {
-	@include clearfix;
+$content-margin: 2px;
+
+.horizontal-panel {
+	@include display-box;
+	@include box-orient(horizontal);
+}
+
+.vertical-panel {
+	@include display-box;
+	@include box-orient(vertical);
+}
+
+.top-main-content {
+	margin: $content-margin;
+}
+
+.top-header {
+	margin: $content-margin;
+}
+
+.top-browse {
+	margin: $content-margin;
+	
+	.commit-graph {
+	   @include box-flex(1);
+	   height: 300px;
+	}
+	
+	.commit-browser {
+	   @include box-flex(1);
+	   height: 300px;
+	}
+}
+
+.top-command {
+	margin: $content-margin;
+
+    .console-panel {
+        margin: 1px;
+        width: 320px;
+        height: 240px;
+    }
 }
